@@ -1,0 +1,145 @@
+.header-container__logoweb {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logostudio {
+    color: #000000;
+}
+
+.nav {
+    margin-left: 93px;
+}
+
+.nav-items {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--titletext-color);
+    display: flex;
+    gap: 50px;
+}
+
+.nav-items__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--titletext-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+    
+        }
+}
+
+.navline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--hover-color);
+}
+
+.current {
+    color: var(--hover-color);
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-mail__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+            fill: var(--hover-color);
+        }
+}
+
+.header-tel__icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+            fill: var(--hover-color);
+        }
+}
+
+.header-mail{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--p-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+                color: var(--hover-color);
+                fill: var(--hover-color);
+            }
+    }
+
+.header-tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+            fill: var(--hover-color);
+        }
+}
+
+.header-container {
+    display: flex;
+    border-bottom: 1px solid var(--headerline-color);
+    height: 80px;
+}
+
+.header-container__items {
+    display: flex;
+    align-items: center;
+}

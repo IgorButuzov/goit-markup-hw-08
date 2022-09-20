@@ -1,0 +1,32 @@
+.client-items {
+    display: flex;
+}
+
+.client-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.client-item__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border: 1px solid var(--hover-color);
+        fill: var(--hover-color);
+        }
+}
+
+
+
+.client-item__icon {
+    width: 106px;
+    height: 60px;
+}
