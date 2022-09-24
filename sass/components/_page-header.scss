@@ -1,12 +1,13 @@
+.current {
+    color: var(--hover-color);
+}
 
 @media screen and (min-width: 280px) and (max-width: 767px){
-    .header-container__items {
-        
+.header-container__items {
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
         }
 .header-container__logoweb {
         font-family: 'Raleway';
@@ -16,53 +17,44 @@
         letter-spacing: 0.03em;
         color: #2196F3;
     }
-
-    .logostudio {
+.logostudio {
         color: #000000;
     }
-
-    .current {
-        color: var(--hover-color);
-    }
-
-    .header-container {
+.header-container {
         width: 480px;
         margin-right: auto;
         margin-left: auto;
-        // border-bottom: 1px solid var(--headerline-color);
         height: 60px;
+        border-bottom: 1px solid var(--headerline-color);
     }
-    .burger-btn{
+.burger-btn{
         background-color: transparent;
         border: none;
         cursor: pointer;
         line-height: 0;
         padding: 0;
     }    
-    .burger-icon{
+.burger-icon{
         width: 40px;
         height: 40px;
     }
-
-    .nav{
+.nav{
         display: none;
     }
-    .header-contacts{
+.header-contacts{
         display: none;
     }
-    
 }
 
 @media screen and (min-width: 768px) {
-    .header-container__items {
+.header-container__items {
         width: 768px;
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
-    .header-container__logoweb {
+.header-container__logoweb {
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -70,44 +62,37 @@
         letter-spacing: 0.03em;
         color: #2196F3;
     }
-
-    .logostudio {
+.logostudio {
         color: #000000;
     }
-
-    .current {
-        color: var(--hover-color);
-    }
-    .header-container {
+.header-container {
     width: 768px;
     margin-right: auto;
     margin-left: auto;
-    // border-bottom: 1px solid var(--headerline-color);
     height: 80px;
+    border-bottom: 1px solid var(--headerline-color);
     }
-        .nav {
+.nav {
             display: block;
         }
-    
-        .header-contacts {
+.header-contacts {
             display: block;
         }
-        .burger-btn{
+.burger-btn{
             display: none;
         }
 
 }
 
-@media screen and (min-width: 1170px) {
-    .header-container__items {
+@media screen and (min-width: 1200px) {
+.header-container__items {
         width: 1170px;
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
-    .header-container__logoweb {
+.header-container__logoweb {
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -115,35 +100,26 @@
         letter-spacing: 0.03em;
         color: #2196F3;
     }
-
-    .logostudio {
+.logostudio {
         color: #000000;
     }
-
-    .current {
-        color: var(--hover-color);
-    }
-
-    .header-container {
+.header-container {
         width: 1170px;
         margin-right: auto;
         margin-left: auto;
         border-bottom: 1px solid var(--headerline-color);
         height: 80px;
     }
-
-    .nav {
+.nav {
         display: flex;
     }
-
-    .header-contacts {
+.header-contacts {
         display: flex;
         margin-left: auto;
         gap: 50px;
         align-items: center;
     }
-
-    .burger-btn {
+.burger-btn {
         display: none;
     }
 

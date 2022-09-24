@@ -16,9 +16,14 @@
 <body class="body">
     <!--Шапка-->
     <header class="header-container">
-        <div class="container header-container__items">
+        <div class="header-container__items">
             <a class="header-container__logoweb link" href="./index.html">Web<span class="logostudio">Studio</span>
             </a>
+            <button type="button" class="burger-btn" data-menu-open>
+                <svg class="burger-icon">
+                    <use href="./images/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
     
             <nav class="nav">
                 <ul class="nav-items">
@@ -27,21 +32,58 @@
                     <li><a class="nav-items__link link" href="">Контакти</a></li>
                 </ul>
             </nav>
-            
+    
             <ul class="header-contacts">
                 <li>
                     <a class="header-mail link" href=mailto:info@devstudio.com>
                         <svg class="header-mail__icon">
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
                 <li>
                     <a class="header-tel link" href=tel:+380961111111>
                         <svg class="header-tel__icon">
-                        <use href="./images/symbol-defs.svg#icon-tel"></use>
+                            <use href="./images/symbol-defs.svg#icon-tel"></use>
                         </svg>+380961111111
                     </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="headermob-closebtn" data-menu-close>
+                <svg class="headermob-closebutton-icon">
+                    <use href="./images/symbol-defs.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <nav class="menu-nav">
+                <ul class="menu-nav-items">
+                    <li><a class="menu-nav-items__link link" href="./index.html">Студія</a></li>
+                    <li><a class="menu-nav-items__link link current navline" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="menu-nav-items__link link" href="">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="menu-header-contact-items">
+                <li class="menu-header-tel-item">
+                    <a class="menu-header-tel link" href=tel:+380961111111>+380961111111</a>
+                </li>
+                <li class="menu-header-mail-item">
+                    <a class="menu-header-mail link" href=mailto:info@devstudio.com>info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="contact-sociallinks">
+                <li>
+                    <a class="contact-sociallink link" href="https://www.instagram.com/">Instagram</a>
+                </li>
+                <li>
+                    <a class="contact-sociallink link" href="https://www.twitter.com/">Twitter</a>
+                </li>
+                <li>
+                    <a class="contact-sociallink link" href="https://www.facebook.com/">Facebook</a>
+                </li>
+                <li>
+                    <a class="contact-sociallink link" href="https://www.linkedin.com/">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -72,7 +114,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="">
                         <div class="examplecard">
-                    <img src="./images/workphoto1.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto1.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -86,7 +128,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="">
                     <div class="examplecard">
-                    <img src="./images/workphoto2.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto2.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -99,7 +141,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="/">
                     <div class="examplecard">
-                    <img src="./images/workphoto3.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto3.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -112,7 +154,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="/">
                     <div class="examplecard">
-                    <img src="./images/workphoto4.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto4.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -126,7 +168,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="/">
                     <div class="examplecard">
-                    <img src="./images/workphoto5.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto5.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -139,7 +181,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="/">
                     <div class="examplecard">
-                    <img src="./images/workphoto6.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto6.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -152,7 +194,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="/">
                     <div class="examplecard">
-                    <img src="./images/workphoto7.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto7.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -165,7 +207,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="/">
                     <div class="examplecard">
-                    <img src="./images/workphoto8.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto8.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -179,7 +221,7 @@
                 <li class="examplework-item">
                     <a class="examplework-item__hovercard link" href="/">
                     <div class="examplecard">
-                    <img src="./images/workphoto9.jpg" alt="зображення веб-сайт" width="370">
+                    <img src="./images/workphoto9.jpg" alt="зображення веб-сайт" width="450">
                         <p class="examplecard-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
@@ -272,7 +314,7 @@
         </div>
     </footer>
     
-    
+    <script src="./js/menu.js"></script>
     </body>
     
     </html>

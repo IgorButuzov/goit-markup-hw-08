@@ -174,3 +174,52 @@
     letter-spacing: 0.03em;
     color: var(--textwhite-color);
 }
+
+@media screen and(min-width:320px) {
+.footer-conteiner {
+    display: block;
+    }
+.footer-conteiner__contacts {
+     display: block;
+     text-align: center;
+     margin-bottom: 60px;
+ }
+ .footer-conteiner__join {
+     margin-left: 0;
+     text-align: center;
+     margin-bottom: 60px;
+ }
+ .footer-icons {
+     justify-content: center;
+ }
+ .footer-form__title {
+    text-align: center;
+ }
+ .footer-submit {
+    display: block;
+    text-align: center;
+ }
+ .submit-button {
+     margin-top: 20px;
+     display: inline;
+ }
+
+}
+
+@media screen and(min-width:768px) {
+    .footer-conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-submit{
+    display: flex;
+    flex-direction: column;
+}
+.footer-form {
+    margin-right: auto;
+}
+.footer-input {
+    width: 450px;
+}
+}
