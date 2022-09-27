@@ -1513,6 +1513,7 @@ img {
   }
   .footer-conteiner__contacts {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 .backdrop {
