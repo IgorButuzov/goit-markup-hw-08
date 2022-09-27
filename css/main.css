@@ -73,6 +73,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -268,6 +274,7 @@ img {
   }
   .contact-sociallinks {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 40px;
     gap: 10px;
   }
@@ -434,7 +441,6 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--titletext-color);
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -472,7 +478,6 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--titletext-color);
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -592,7 +597,7 @@ img {
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
-    width: 360px;
+    width: 300px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -667,6 +672,7 @@ img {
 .benefits-card__iconbox {
   width: 270px;
   height: 120px;
+  border-radius: 4px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
   display: flex;
@@ -730,7 +736,7 @@ img {
     text-align: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .benefits-card {
     width: 100%;
   }
@@ -747,7 +753,7 @@ img {
     margin-top: 0;
   }
   .benefits-card:nth-child(-1n+3) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
   .container {
     width: 768px;
@@ -755,6 +761,8 @@ img {
   .benefits-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
   }
   .benefits-items:not(:first-child) {
     margin-left: 0;
@@ -906,6 +914,10 @@ img {
     margin-left: 0;
     margin-top: 30px;
   }
+  .secondary-title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 @media screen and (min-width: 768px) {
   .specialists {
@@ -927,6 +939,10 @@ img {
   }
   .specialist-card:nth-child(2n+2) {
     margin-left: 30px;
+  }
+  .secondary-title {
+    font-size: 28px;
+    line-height: 1.17;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -951,6 +967,10 @@ img {
   }
   .specialist-card:nth-child(2n+2) {
     margin-left: 0px;
+  }
+  .secondary-title {
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 .client-items {
@@ -1113,6 +1133,7 @@ img {
   .filterbuttons {
     flex-wrap: wrap;
     justify-content: start;
+    margin-bottom: 40px;
   }
   .filterbutton {
     padding: 6px 25px;
@@ -1130,6 +1151,13 @@ img {
 @media screen and (min-width: 768px) {
   .filterbuttons {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filterbuttons {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 .examplecard {
@@ -1441,7 +1469,7 @@ img {
   .footer-conteiner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .footer-submit {
     display: flex;
@@ -1482,6 +1510,9 @@ img {
     margin-top: 0;
     display: flex;
     align-items: center;
+  }
+  .footer-conteiner__contacts {
+    text-align: start;
   }
 }
 .backdrop {
@@ -1688,6 +1719,12 @@ img {
   height: 18px;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 300px;
+    height: 609px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;

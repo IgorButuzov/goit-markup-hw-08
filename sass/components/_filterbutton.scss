@@ -39,6 +39,7 @@
 .filterbuttons {
         flex-wrap: wrap;
         justify-content: start;
+        margin-bottom: 40px;
     }
 .filterbutton{
     padding: 6px 25px;
@@ -58,5 +59,15 @@
 @media screen and (min-width:768px) {
 .filterbuttons{
     justify-content: center;
+    margin-bottom: 30px;
     }
+    
+}
+
+@media screen and (min-width:1200px) {
+.filterbuttons{
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+    
 }

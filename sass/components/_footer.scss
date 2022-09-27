@@ -212,7 +212,7 @@
     .footer-conteiner {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .footer-submit{
     display: flex;
@@ -255,5 +255,8 @@
     margin-top: 0;
     display: flex;
     align-items: center;
+}
+.footer-conteiner__contacts {
+    text-align: start;
 }
 }
