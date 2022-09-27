@@ -35,12 +35,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width:1199px){
-    .modal {
-        max-width: 450px;
-        height: 609px;
-    }
-}
+
 .modaltext {
     
     font-weight: 700;
@@ -138,8 +133,8 @@
 
 .accept {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -148,12 +143,12 @@
     margin-bottom: 30px;
     color: #757575;
     cursor: pointer;
-
+    
 }
 
 .icon-check {
     position: absolute;
-    left: 52px;
+    left: 40px;
     width: 15px;
     height: 15px;
     border: 2px solid var(--titletext-color);
@@ -224,3 +219,14 @@
 
 }
 
+@media screen and (max-width:1199px) {
+    .modal {
+        max-width: 450px;
+        height: 609px;
+    }
+
+    .accept {
+        font-size: 12px;
+        line-height: 1.15;
+    }
+}
